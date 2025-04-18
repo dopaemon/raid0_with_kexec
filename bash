@@ -1,0 +1,1 @@
+alias boot='sudo mount /dev/md0 /mnt && sudo kexec -l /mnt/boot/vmlinuz-6.12.21-amd64 --initrd=/mnt/boot/initrd.img-6.12.21-amd64 --command-line="root=/dev/md0 ro console=ttyS0,115200n8 console=tty0 net.ifnames=0 biosdevname=0" && sync && sleep 1 && kexec -e'
